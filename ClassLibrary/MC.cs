@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 namespace ClassLibrary
 {
@@ -26,10 +27,16 @@ namespace ClassLibrary
         {
             return "MC";
         }
+        
+        public MC(string licensePlate) 
+            : base(licensePlate)
+        {
+            LicensePlate = licensePlate;
+        }
 
-
-
-
+        public MC()
+        {
+        }
     }
 
 }
