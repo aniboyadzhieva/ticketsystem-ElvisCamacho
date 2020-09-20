@@ -9,31 +9,31 @@ namespace Test_TicketSystem
     [TestClass]
     public class CarClass_Test
     {
-        //[TestMethod]
-        //public void Test_PriceMethod240kr()
-        //{
-        //    // Arrange - Creating the object  we will use for test
-        //    var car = new Car();
+        [TestMethod]
+        public void Test_PriceMethod240kr()
+        {
+            // Arrange - Creating the object  we will use for test
+            var car = new Car();
 
-        //    // Act - call the method at object we will be testing
-        //    double price = car.Price();
+            // Act - call the method at object we will be testing
+            double price = car.Price();
 
-        //    // Assert -  test the value if is correct (Assert class is static)
-        //    Assert.AreEqual(240,price);
+            // Assert -  test the value if is correct (Assert class is static)
+            Assert.AreEqual(250, price);
 
-        //}
+        }
 
 
-        //[TestMethod]
-        //public void Test_Car_VehicleType()
-        //{
-        //    var vehicle = new Car();
+        [TestMethod]
+        public void Test_Car_VehicleType()
+        {
+            var vehicle = new Car();
 
-        //    string VehicleType = vehicle.VehicleType();
+            string VehicleType = vehicle.VehicleType();
 
-        //    Assert.AreEqual("Car",VehicleType);
+            Assert.AreEqual("Car", VehicleType);
 
-        //}
+        }
 
         [TestMethod]
         public void Test_PriceMethod125kr()
@@ -57,10 +57,21 @@ namespace Test_TicketSystem
 
             string VehicleType = mc.VehicleType();
 
-            Assert.AreEqual("MC",VehicleType);
+            Assert.AreEqual("MC", VehicleType);
 
         }
 
 
+        [TestMethod]
+
+        public void Test_licensePlate(string licensePlate)
+        {
+
+            Car lcp = new Car();
+            string result = lcp.LicensePlate;
+            Assert.ThrowsException<ArgumentException>(() => result);
+
+                
+        }
     }
 }
