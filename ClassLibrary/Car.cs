@@ -7,7 +7,7 @@ namespace ClassLibrary
     /// <summary>
     /// This is a CAR Class
     /// </summary>
-    public class Car
+    public abstract class Car
     {
         public string LicensePlate { get; set; }
         public DateTime Date { get; set; }
@@ -16,7 +16,7 @@ namespace ClassLibrary
         /// Price method
         /// </summary>
         /// <returns> 240kr</returns>
-        public double Price()
+        public virtual double Price()
         {
             return 240;
         }
@@ -24,7 +24,7 @@ namespace ClassLibrary
         /// VehicleType method 
         /// </summary>
         /// <returns> a string car </returns>
-        public string VehicleType()
+        public virtual string VehicleType()
         {
             return "Car";
         }

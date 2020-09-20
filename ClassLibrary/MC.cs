@@ -5,7 +5,7 @@ namespace ClassLibrary
     /// <summary>
     /// This is a MC Class
     /// </summary>
-    public class MC
+    public class MC : Car
     {
         public string LicensePlate { get; set; }
         public DateTime Date { get; set; }
@@ -14,7 +14,7 @@ namespace ClassLibrary
         /// Price method
         /// </summary>
         /// <returns> 125kr </returns>
-        public double Price()
+        public override double Price()
         {
             return 125;
         }
@@ -22,7 +22,7 @@ namespace ClassLibrary
         /// VehicleType method 
         /// </summary>
         /// <returns> a string MC </returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "MC";
         }
