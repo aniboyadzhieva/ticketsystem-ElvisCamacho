@@ -7,7 +7,7 @@ using System;
 namespace Test_TicketSystem
 {
     [TestClass]
-    public class UnitTest1
+    public class CarClass_Test
     {
         [TestMethod]
         public void Test_PriceMethod240kr()
@@ -25,7 +25,7 @@ namespace Test_TicketSystem
 
 
         [TestMethod]
-        public void Test_VehicleType()
+        public void Test_Car_VehicleType()
         {
             var vehicle = new Car();
 
@@ -35,7 +35,31 @@ namespace Test_TicketSystem
 
         }
 
+        [TestMethod]
+        public void Test_PriceMethod125kr()
+        {
+            // Arrange - Creating the object  we will use for test
+            var car = new MC();
 
+            // Act - call the method at object we will be testing
+            double price = car.Price();
+
+            // Assert -  test the value if is correct (Assert class is static)
+            Assert.AreEqual(125,price);
+
+        }
+
+
+        [TestMethod]
+        public void Test_Mc_VehicleType()
+        {
+            var mc = new MC();
+
+            string VehicleType = mc.VehicleType();
+
+            Assert.AreEqual("MC",VehicleType);
+
+        }
 
 
     }

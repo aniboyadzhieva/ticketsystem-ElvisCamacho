@@ -21,5 +21,22 @@
             </summary>
             <returns> a string car </returns>
         </member>
+        <member name="T:ClassLibrary.MC">
+            <summary>
+            This is a MC Class
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.MC.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns> 125kr </returns>
+        </member>
+        <member name="M:ClassLibrary.MC.VehicleType">
+            <summary>
+            VehicleType method 
+            </summary>
+            <returns> a string MC </returns>
+        </member>
     </members>
 </doc>
