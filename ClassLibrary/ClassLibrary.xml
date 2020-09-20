@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary.Car">
+            <summary>
+            This is a CAR Class
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Car.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns> 240kr</returns>
+        </member>
+        <member name="M:ClassLibrary.Car.VehicleType">
+            <summary>
+            VehicleType method 
+            </summary>
+            <returns> a string car </returns>
+        </member>
+    </members>
+</doc>
