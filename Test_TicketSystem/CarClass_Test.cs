@@ -63,15 +63,20 @@ namespace Test_TicketSystem
 
 
         [TestMethod]
-
-        public void Test_licensePlate(string licensePlate)
+        public void Test_licensePlate()
         {
+            Car vehicle = new Car();
 
-            Car lcp = new Car();
-            string result = lcp.LicensePlate;
-            Assert.ThrowsException<ArgumentException>(() => result);
+            try
+            {
+                vehicle.NumberPlate("12345678");
+            }
+            catch (System.ArgumentException)
+            {
+                return;
+            }
+            Assert.Fail();
 
-                
         }
     }
 }

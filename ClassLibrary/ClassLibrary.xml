@@ -9,6 +9,13 @@
             This is a CAR Class
             </summary>
         </member>
+        <member name="M:ClassLibrary.Car.NumberPlate(System.String)">
+            <summary>
+            This METHOD check if the number plate is more than 7 characters
+            </summary>
+            <param name="licensePlate"></param>
+            <returns></returns>
+        </member>
         <member name="M:ClassLibrary.Car.Price">
             <summary>
             Price method

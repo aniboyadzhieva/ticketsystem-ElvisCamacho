@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Transactions;
 
 namespace ClassLibrary
 {
@@ -13,28 +9,33 @@ namespace ClassLibrary
     {
         public DateTime Date { get; set; }
 
-        public string LicensePlate {get; set;}
+        public string LicensePlate { get; set; }
 
         public Car()
          : base()
         {
-            
+
         }
 
-        public Car(string licensePlate)
+        public Car( string licensePlate)
         {
-            for (int i = 0; i > 7; i++)
+            LicensePlate = licensePlate;    
+        }
+
+        /// <summary>
+        /// This METHOD check if the number plate is more than 7 characters
+        /// </summary>
+        /// <param name="licensePlate"></param>
+        /// <returns> returns the number plate </returns>
+        public virtual string NumberPlate(string licensePlate)
+        {
+
+            if (licensePlate.Length > 7)
             {
-                if (licensePlate.Length > 7)
-                {
-                    throw new ArgumentException($"Invalid License Plate");
-                }
-                
+                throw new ArgumentException($"Invalid License Plate");
             }
-                
-            
-            
-            LicensePlate = licensePlate;
+
+            return licensePlate;
         }
 
 
