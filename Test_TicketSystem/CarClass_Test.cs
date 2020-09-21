@@ -19,7 +19,7 @@ namespace Test_TicketSystem
             double price = car.Price();
 
             // Assert -  test the value if is correct (Assert class is static)
-            Assert.AreEqual(250, price);
+            Assert.AreEqual(240, price);
 
         }
 
@@ -65,18 +65,19 @@ namespace Test_TicketSystem
         [TestMethod]
         public void Test_licensePlate()
         {
-            Car vehicle = new Car();
+            Vehicle vehicle = new Car();
 
             try
             {
-                vehicle.NumberPlate("12345678");
+                vehicle.LicensePlate("12345678");
             }
             catch (System.ArgumentException)
             {
-                return;
+                Assert.Fail();
             }
-            Assert.Fail();
-
         }
+
+        
+
     }
 }

@@ -6,7 +6,7 @@ namespace ClassLibrary
     /// <summary>
     /// This is a MC Class
     /// </summary>
-    public class MC : Car
+    public class MC : Vehicle
     {
         public string LicensePlate { get; set; }
         public DateTime Date { get; set; }
@@ -28,14 +28,16 @@ namespace ClassLibrary
             return "MC";
         }
         
-        public MC(string licensePlate) 
-            : base(licensePlate)
+        public MC(string licensePlate, bool brobizzDiscount, DateTime date) : base(licensePlate, brobizzDiscount, date)
         {
-            LicensePlate = licensePlate;
         }
 
-        public MC()
+        /// <summary>
+        /// default MC constructor
+        /// </summary>
+        public MC() : base()
         {
+
         }
     }
 

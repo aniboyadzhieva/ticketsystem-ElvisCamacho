@@ -9,13 +9,6 @@
             This is a CAR Class
             </summary>
         </member>
-        <member name="M:ClassLibrary.Car.NumberPlate(System.String)">
-            <summary>
-            This METHOD check if the number plate is more than 7 characters
-            </summary>
-            <param name="licensePlate"></param>
-            <returns></returns>
-        </member>
         <member name="M:ClassLibrary.Car.Price">
             <summary>
             Price method
@@ -44,6 +37,41 @@
             VehicleType method 
             </summary>
             <returns> a string MC </returns>
+        </member>
+        <member name="M:ClassLibrary.MC.#ctor">
+            <summary>
+            default MC constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor">
+            <summary>
+            default Vehicle constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor(System.String,System.Boolean,System.DateTime)">
+            <summary>
+            Vehicle constructor - includes the functionality about the length of the license plate
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="brobizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns>double 240</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.BrobizzDiscountMethod">
+            <summary>
+            BrobizzDiscountMethod method
+            </summary>
+            <returns>price with discount or the default one</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.VehicleType">
+            <summary>
+            VehicleType method - only overrides are used
+            </summary>
+            <returns></returns>
         </member>
     </members>
 </doc>
