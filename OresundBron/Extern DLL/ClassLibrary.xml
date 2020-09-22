@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary.Car">
+            <summary>
+            This is a CAR Class
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Car.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns> 240kr</returns>
+        </member>
+        <member name="M:ClassLibrary.Car.VehicleType">
+            <summary>
+            VehicleType method 
+            </summary>
+            <returns> a string car </returns>
+        </member>
+        <member name="T:ClassLibrary.MC">
+            <summary>
+            This is a MC Class
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.MC.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns> 125kr </returns>
+        </member>
+        <member name="M:ClassLibrary.MC.VehicleType">
+            <summary>
+            VehicleType method 
+            </summary>
+            <returns> a string MC </returns>
+        </member>
+        <member name="M:ClassLibrary.MC.#ctor">
+            <summary>
+            default MC constructor
+            </summary>
+        </member>
+        <member name="T:ClassLibrary.Vehicle">
+            <summary>
+            all the class will inherited from this vehicle class
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor">
+            <summary>
+            default Vehicle constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor(System.String,System.Boolean,System.DateTime)">
+            <summary>
+            Vehicle constructor - includes the functionality about the length of the license plate
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="brobizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns>double 240</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.BrobizzDiscountMethod">
+            <summary>
+            BrobizzDiscountMethod method
+            </summary>
+            <returns>price with discount or the default one</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.VehicleType">
+            <summary>
+            VehicleType method - only overrides are used
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

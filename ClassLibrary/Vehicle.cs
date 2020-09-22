@@ -54,10 +54,12 @@ namespace ClassLibrary
         /// BrobizzDiscountMethod method
         /// </summary>
         /// <returns>price with discount or the default one</returns>
-        public virtual double BrobizzDiscountMethod()
+        public double BrobizzDiscountMethod()
         {
             if (BrobizzDiscount)
+            {
                 return Price() * 0.95;
+            }
             return Price();
         }
 
