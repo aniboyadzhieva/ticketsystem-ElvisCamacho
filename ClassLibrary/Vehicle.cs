@@ -4,6 +4,9 @@ using System.Text;
 
 namespace ClassLibrary
 {
+    /// <summary>
+    /// all the class will inherited from this vehicle class
+    /// </summary>
     public abstract class Vehicle
     { 
         private string brobizzDiscount;

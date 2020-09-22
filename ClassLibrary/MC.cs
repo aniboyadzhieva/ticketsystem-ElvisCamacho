@@ -28,7 +28,8 @@ namespace ClassLibrary
             return "MC";
         }
         
-        public MC(string licensePlate, bool brobizzDiscount, DateTime date) : base(licensePlate, brobizzDiscount, date)
+        public MC(string licensePlate, bool brobizzDiscount, DateTime date) 
+            : base(licensePlate, brobizzDiscount, date)
         {
         }
 
